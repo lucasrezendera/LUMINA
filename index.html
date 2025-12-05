@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Tickets - Marketplace de Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Urbanist', 'sans-serif'],
+              display: ['Orbitron', 'sans-serif'],
+            },
+            // SYSTEM: Configuração Centralizada de Tipografia (Recalibrada)
+            // Voltando para uma escala mais legível e menos agressiva, mantendo o leading generoso.
+            fontSize: {
+              'xs': ['0.75rem', { lineHeight: '1rem', letterSpacing: '0.02em' }],     // 12px
+              'sm': ['0.875rem', { lineHeight: '1.25rem', letterSpacing: '0.02em' }], // 14px
+              'base': ['1rem', { lineHeight: '1.6rem', letterSpacing: '0.015em' }],   // 16px (Padrão Web ideal)
+              'lg': ['1.125rem', { lineHeight: '1.75rem', letterSpacing: '0.015em' }],// 18px
+              'xl': ['1.25rem', { lineHeight: '1.85rem', letterSpacing: '0.015em' }], // 20px
+              '2xl': ['1.5rem', { lineHeight: '2rem', letterSpacing: '0.01em' }],      // 24px
+              '3xl': ['2rem', { lineHeight: '2.5rem', letterSpacing: '0.01em' }],      // 32px
+              '4xl': ['2.5rem', { lineHeight: '1.1', letterSpacing: '0.02em' }],       // 40px
+              '5xl': ['3rem', { lineHeight: '1.1', letterSpacing: '0.02em' }],         // 48px
+              '6xl': ['3.75rem', { lineHeight: '1', letterSpacing: '0.02em' }],        // 60px
+              '7xl': ['4.5rem', { lineHeight: '1', letterSpacing: '0.02em' }],        // 72px
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Urbanist', sans-serif;
+        background-color: #000;
+        letter-spacing: 0.01em; 
+      }
+      /* Ocultar barra de rolagem mas manter funcionalidade */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      /* Custom Scrollbar para áreas internas */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
